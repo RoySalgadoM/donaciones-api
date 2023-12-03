@@ -1,0 +1,57 @@
+{
+  "name": "nodejs-clean-architecture-app",
+  "version": "1.0.0",
+  "description": "A simple API built with Node.js/Hapi.js that follows DDD + Clean Architecture principles",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js",
+    "test": "NODE_ENV=test jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "Jérémy Buget",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbuget/nodejs-clean-architecture-app.git"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.1",
+    "@hapi/good": "^9.0.0",
+    "@hapi/good-console": "^9.0.0",
+    "@hapi/good-squeeze": "^6.0.0",
+    "@hapi/hapi": "^20.3.0",
+    "@hapi/inert": "^6.0.3",
+    "@hapi/vision": "^6.0.1",
+    "bcrypt": "^5.1.1",
+    "blipp": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "hapi-auth-jwt2": "^10.4.0",
+    "hapi-swagger": "^14.0.0",
+    "joi": "^17.9.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.16",
+    "nodemailer": "^6.9.7",
+    "request": "^2.88.2",
+    "require-directory": "^2.1.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6.12"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**"
+    ],
+    "testURL": "http://localhost/"
+  }
+}

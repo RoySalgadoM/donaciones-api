@@ -9,8 +9,18 @@ const start = async () => {
   try {
     await bootstrap.init();
 
-    const server = await createServer();
+    
+    const corsConfig = {
+      origin: ['*'],
+      routes: ['*'],
+
+    };
+
+    const server = await createServer(corsConfig);
+
     await server.start();
+
+
 
     console.log('Server running at:', server.info.uri);
   } catch (err) {

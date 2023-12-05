@@ -8,14 +8,15 @@ const start = async () => {
 
   try {
     await bootstrap.init();
-
-    
     const corsConfig = {
-      origin: ['*'],
-      routes: ['*'],
-
+      routes: {
+        cors: {
+          origin: ['*'],
+          headers: ['Accept', 'Content-Type'],
+          additionalHeaders: ['X-Requested-With']
+        }
+      }
     };
-
     const server = await createServer(corsConfig);
 
     await server.start();

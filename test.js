@@ -1,14 +1,23 @@
+//--------------Recolecciones-----------------
+
+//El admin puede cancelar una recolección pero el recolector no
+//El admin solo puede cancelar la recolección si está en estado pendiente
+
+//Pendiente --- > En proceso
+//En proceso ---> Finalizado
+//En proceso ---> Cancelado (El recolector tiene que agregar comentarios generales y fotos generales)
+
 let recolecciones = {
     id: 1,
     name: "Recoleccion 1",
     date: "2021-10-01",
-    status: "Pendiente",
+    status: "Pendiente", //En proceso, Finalizado, Cancelado
     chain: {
         id: 1,
         name: "Cadena 1",
         address: "Calle 1",
         nameLinkPerson: "Persona 1",
-        phones: "123456789",
+        phones: ["123456789", "123456789"],
         status: true
     },
     products: [
@@ -22,6 +31,10 @@ let recolecciones = {
             },
         }
     ],
+    generalAnnexes: {
+        commentary: "Comentario general",
+        photos: ["/images/idRecolección.jpg"]
+    },
     user: {
         id: 1,
         name: "Roy",

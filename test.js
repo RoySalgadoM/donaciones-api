@@ -8,41 +8,49 @@
 //En proceso ---> Cancelado (El recolector tiene que agregar comentarios generales y fotos generales)
 
 let recolecciones = {
-    id: 1,
-    name: "Recoleccion 1",
-    date: "2021-10-01",
-    status: "Pendiente", //En proceso, Finalizado, Cancelado
-    chain: {
-        id: 1,
-        name: "Cadena 1",
-        address: "Calle 1",
-        nameLinkPerson: "Persona 1",
-        phones: ["123456789", "123456789"],
-        status: true
+    "id": "6576202846fd129f5f7c1e6b",
+    "name": "Recoleccion Chedraui #1",
+    "date": "2023-12-10T00:00:00.000Z",
+    "status": "Pendiente",
+    "chain": {
+        "_id": "65760ffcace42244ec1e94f2",
+        "name": "Chedraui",
+        "address": "Carretera Zapata, A Tezoyuca 38 Col, Campo Nuevo, 62766 Emiliano Zapata, Mor.",
+        "nameLinkPerson": "Zulma Martinez",
+        "phones": [
+            "7776543456",
+            "7778909876"
+        ],
+        "status": true
     },
-    products: [
+    "products": [
         {
-            id: 1,
-            name: "Producto 1",
-            quantity: 3,
-            annexes: {
-                commentary: "De 3 cajas solo me dieron 2",
-                photos: ["/images/idRecolección_idProducto.jpg"]
-            },
+            "id": "65761050ace42244ec1e94f6",
+            "name": "Comida para gato",
+            "status": true,
+            "quantity": 4
+        },
+        {
+            "id": "65761048ace42244ec1e94f5",
+            "name": "Lata de atún",
+            "quantity": 10,
+            "status": false
+        },
+        {
+            "id": "65761057ace42244ec1e94f7",
+            "name": "Telera",
+            "quantity": 2,
+            "status": true
         }
     ],
-    generalAnnexes: {
-        commentary: "Comentario general",
-        photos: ["/images/idRecolección.jpg"]
-    },
-    user: {
-        id: 1,
-        name: "Roy",
-        lastName: "Rasmussen",
-        secondSurname: "Gonzalez",
-        email: "roy21rasm@gmail.com",
-        role: "Administrador",
-        phone: "123456789",
+    "generalAnnexes": {},
+    "user": {
+        "id": "65761025ace42244ec1e94f3",
+        "name": "Alex",
+        "lastname": "Salgado",
+        "email": "alex@gmail.com",
+        "role": "Empleado",
+        "phone": "7771144520",
+        "status": true
     }
-
 }

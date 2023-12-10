@@ -1,7 +1,14 @@
 //--------------Recolecciones-----------------
 
-//El admin puede cancelar una recolección pero el recolector no
-//El admin solo puede cancelar la recolección si está en estado pendiente
+
+//Admin
+//Puede crear las recolecciones y asignarlas a los recolectores
+//Puede cancelar la recolección si está en estado pendiente
+
+//Recolector
+//Puede iniciar la recolección si está en estado pendiente
+//Puede finalizar la recolección si está en estado en proceso
+//Puede cancelar la recolección en cualquier estado excepto en finalizado
 
 //Pendiente --- > En proceso
 //En proceso ---> Finalizado

@@ -41,10 +41,7 @@ let recolecciones = {
         lastName: "Rasmussen",
         secondSurname: "Gonzalez",
         email: "roy21rasm@gmail.com",
-        role: {
-            id: 1,
-            name: "Administrador"
-        },
+        role: "Administrador",
         phone: "123456789",
     }
 

@@ -61,3 +61,99 @@ let recolecciones = {
         "status": true
     }
 }
+
+
+
+//Admin
+//Puede crear las entregas y asignarlas a los repartidores
+//Puede cancelar la entrega si está en estado pendiente
+
+//Repartidor
+//Puede iniciar la entrega si está en estado pendiente
+//Puede finalizar la entrega si está en estado en proceso
+//Puede cancelar la entrega en cualquier estado excepto en finalizado
+
+let entregas = {
+    "_id": "6576202846fd129f5f7c1e6b",
+    "name": "Entrega #1",
+    "routes": [
+        {
+            "_id": {
+                "$oid": "65760fecace42244ec1e94f1"
+            },
+            "name": "San José de las cumbres",
+            "reference": "Al sur del estado",
+            "nameLinkPerson": "Maura Bustamante",
+            "phones": [
+                "7771127654",
+                "7771167854"
+            ],
+            "status": "Finalizada",
+            "annexes":{
+                "commentary": "Se entregó todo correctamente",
+                "photos": ["", ""]
+            }
+        },
+        {
+            "id": {
+                "$oid": "6577900726a2987420a6782c",
+            },
+            "name": "Avenida Universidad",
+            "reference": "Cerca de la UTEZ",
+            "nameLinkPerson": "Ignacio Salgado",
+            "phones": [
+                "7771127984",
+                "7771167234"
+            ],
+            "status": "Cancelada",
+            "annexes":{
+                "commentary": "No se encontró a la persona del ayuntamiento",
+                "photos": ["", ""]
+            }
+        },
+        {
+            "id": {
+                "$oid": "6577903e26a2987420a6782d",
+            },
+            "name": "Capiri",
+            "reference": "Cerca de la ayudantía",
+            "nameLinkPerson": "Kemish Jimenez",
+            "phones": [
+                "7771127984",
+                "7771167234"
+            ],
+            
+            "status": "Cancelada",
+        },
+        {
+            "id": {
+                "$oid": "6577917426a2987420a6782e",
+            },
+            "name": "Base de la ruta inter",
+            "reference": "Cerca el centro del municipio",
+            "nameLinkPerson": "Nahum Torres",
+            "phones": [
+                "7771127984",
+                "7771167234"
+            ],
+            "status": "Cancelada",
+        }
+    ],
+    "user": {
+        "id": {
+            "$oid": "65761025ace42244ec1e94f3",
+        },
+        "name": "Alex",
+        "lastname": "Salgado",
+        "email": "alex@gmail.com",
+        "role": "Empleado",
+        "phone": "7771144520",
+        "status": true
+    },
+    "date": "2023-12-10",
+    "generalAnnexes":{
+        "commentary": "Se canceló la entrega por falta de tiempo",
+        "photos": ["", ""]
+    },
+    "status": "Pendiente"
+}
